@@ -1,0 +1,294 @@
+/* Reset & Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6fbff;
+    color: #1a2437;
+}
+
+/* Header */
+/* Container logo sebagai link */
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.logo img {
+    display: block;
+    height: 80px;   
+    width: auto;
+    max-width: 270px; 
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #1a2437;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a2437;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f27c24;
+}
+
+.login-btn {
+    background-color: #f27c24;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #db6b1f;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #edf7ff;
+    padding: 80px 20px 60px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+    line-height: 1.2;
+}
+
+.hero button {
+    background-color: #f27c24;
+    border: none;
+    color: white;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(242, 124, 36, 0.3);
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #db6b1f;
+}
+
+/* Search Bar */
+.search-bar {
+    margin: 40px auto 0;
+    max-width: 600px;
+    background: white;
+    border-radius: 12px;
+    padding: 12px 18px;
+    display: flex;
+    gap: 12px;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 0.1);
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 16px;
+    outline-offset: 0;
+    outline-color: transparent;
+    transition: border-color 0.3s;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #f27c24;
+    outline-offset: 2px;
+    outline-color: #f27c24;
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0 8px;
+    color: #1a2437;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar button svg {
+    stroke: #1a2437;
+    stroke-width: 2;
+    fill: none;
+}
+
+/* Section Titles */
+  .center-title {
+    text-align: center;
+    margin-left: 0;
+}
+
+/* Vendor Cards Container */
+.vendor-cards {
+    display: flex;
+    gap: 24px;
+    padding: 0 40px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Vendor Card */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 0.05);
+    width: 250px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #1a2437;
+}
+
+.stars {
+    font-size: 16px;
+    color: #f9b234;
+}
+
+.card button {
+    background-color: #1a2437;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #16212e;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+    background: white;
+    max-width: 700px;
+    margin: 0 auto 80px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 0.06);
+    padding: 24px 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.testimonial-section img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    color: #1a2437;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.testimonial-text strong {
+    display: block;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+/* Footer */
+footer {
+    background-color: #edf7ff;
+    color: #1a2437;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer strong {
+    font-weight: 700;
+}
+
+/* Social Media Icons Container */
+.socials {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background-color: #1a2437;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.socials a:hover {
+    background-color: #f27c24;
+}
